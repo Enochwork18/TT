@@ -22,8 +22,8 @@ function getDifficultySettings(level) {
 	const progress = (level - 1) / (MAX_LEVEL - 1);
 	return {
 		spawnRate: Math.min(0.04 + progress * 0.08, 0.12),
-		baseStarSpeed: 2 + progress * 3,
-		speedVariation: 1 + progress * 2,
+		baseStarSpeed: 3.5 + progress * 4,
+		speedVariation: 1.5 + progress * 2.5,
 		badStarRatio: Math.min(0.2 + progress * 0.25, 0.45),
 		scorePerStar: Math.floor(10 + progress * 40),
 		starsToComplete: Math.floor(15 + progress * 20),
