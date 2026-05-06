@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TTGame - Catch the Stars</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <div class="game-shell">
+        <h1>TTGame - Catch the Stars</h1>
+        <div class="game-info">
+            <p>Level: <span id="level">1</span>/100</p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Lives: <span id="lives">9</span></p>
+            <p>Progress: <span id="progress">0</span>%</p>
+        </div>
+        <div class="level-bar">
+            <div class="level-fill" id="levelFill"></div>
+        </div>
+        <div class="game-board" id="gameBoard">
+            <div class="player" id="player"></div>
+        </div>
+        <div class="controls">
+            <p>Use <strong>Left</strong> and <strong>Right</strong> arrow keys to move.</p>
+            <button id="restartBtn">Restart Game</button>
+            <button id="nextLevelBtn" style="display: none;">Next Level</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
